@@ -6,7 +6,7 @@
 .container{
     width: 600px;
     height: 600px;
-    background:url(../img/小婕儿3.png) center/115% no-repeat;
+    background:rgb(63, 121, 142);
     border:20px solid #72a372;
     margin: 20px auto;
     display: flex;

@@ -14,37 +14,37 @@ function drawSnake(snake){
             snake.snakePos[i].domContent.style.left = snake.snakePos[i].x*snakeBody +"px";
             if(snake.snakePos[i].flag==="head"){
                 //说明是蛇头
-                snake.snakePos[i].domContent.style.background='url("../img/佩奇1.jpg") center/160% no-repeat';
+                snake.snakePos[i].domContent.style.background='url("../img/蛇蛇.png") center/160% no-repeat';
                 snake.snakePos[i].domContent.style.borderRadius='50%';
-                //根据方向进行旋转
-                // switch(snake.direction.flag){
-                //     case 'top':{
-                //         snake.snakePos[i].domContent.style.transform=`
-                //         rotate(-90deg)
-                //         `;
-                //         break;
-                //     }
-                //     case 'left':{
-                //         snake.snakePos[i].domContent.style.transform=`
-                //         rotate(-180deg)
-                //         `;
-                //         break;
-                //     }
-                //     case 'right':{
-                //         snake.snakePos[i].domContent.style.transform=`
-                //         rotate(0deg)
-                //         `;
-                //         break;
-                //     }
-                //     case 'button':{
-                //         snake.snakePos[i].domContent.style.transform=`
-                //         rotate(90deg)
-                //         `;
-                //         break;
-                //     }
-                // }
+                // 根据方向进行旋转
+                switch(snake.direction.flag){
+                    case 'top':{
+                        snake.snakePos[i].domContent.style.transform=`
+                        rotate(-90deg)
+                        `;
+                        break;
+                    }
+                    case 'left':{
+                        snake.snakePos[i].domContent.style.transform=`
+                        rotate(-180deg)
+                        `;
+                        break;
+                    }
+                    case 'right':{
+                        snake.snakePos[i].domContent.style.transform=`
+                        rotate(0deg)
+                        `;
+                        break;
+                    }
+                    case 'button':{
+                        snake.snakePos[i].domContent.style.transform=`
+                        rotate(90deg)
+                        `;
+                        break;
+                    }
+                }
             }else{//蛇身
-                snake.snakePos[i].domContent.style.background ='url("../img/爱心2.png") center/100% no-repeat';
+                snake.snakePos[i].domContent.style.background ='rgb(86 135 55)';
                 snake.snakePos[i].domContent.style.borderRadius="50%";
             }
         }
@@ -81,7 +81,7 @@ function drawFood(){
         food.domContent.style.width=snakeBody+'px';
         food.domContent.style.height=snakeBody+'px';
         food.domContent.style.position = "absolute";
-        food.domContent.style.background='url("../img/小婕儿1.png") center/110% no-repeat';
+        food.domContent.style.background='url("../img/苹果.png") center/110% no-repeat';
         food.domContent.style.borderRadius='50%';
         document.querySelector('.container').append(food.domContent);
     }
@@ -180,7 +180,7 @@ function snakeMove(){
     }
     //将旧的头修改为身体
     oldHead.flag='body';
-    oldHead.domContent.style.background='url("../img/爱心2.png") center/100% no-repeat';
+    oldHead.domContent.style.background='rgb(86 135 55)';
     oldHead.domContent.style.borderRadius="50%";
     snake.snakePos.push(newHead);
     //是否迟到东西
