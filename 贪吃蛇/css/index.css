@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding: 0;
+}
+/* 设计游戏整体样式 */
+.container{
+    width: 600px;
+    height: 600px;
+    background:url(../img/小婕儿3.png) center/115% no-repeat;
+    border:20px solid #72a372;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* 相对定位 */
+} 
+.container button{
+    border:none;
+    outline: none;
+}
+
+/* 开始按钮 */
+.startBtn{
+    width: 80px;
+    height: 80px;
+    background: url(../img/开始-copy.png) center/contain no-repeat;
+    display: block;
+}
+/* 暂停按钮 */
+.pauseBtn{
+    width: 80px;
+    height: 80px;
+    background: url(../img/暂停-copy.png) center/contain no-repeat;
+    display: none ;
+}
