@@ -1,4 +1,4 @@
-# Z-kinglrq.github.io
+# 贪吃蛇
 这是一个使用原生 JavaScript 写的贪吃蛇游戏；
 ### 发布本项目有两个原因：
 1、作为学生，第一次使用GitHub，对github相关功能的使用做了练习；  
