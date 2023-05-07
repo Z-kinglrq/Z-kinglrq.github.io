@@ -98,7 +98,7 @@ function initGame(){
             });
         }
     }
-    // console.log(gridData);
+    //测试
     // 2、绘制蛇
     drawSnake(snake);
     
