@@ -81,7 +81,7 @@ function drawFood(){
         food.domContent.style.width=snakeBody+'px';
         food.domContent.style.height=snakeBody+'px';
         food.domContent.style.position = "absolute";
-        food.domContent.style.background='url("../img/苹果.png") center/110% no-repeat';
+        food.domContent.style.background='url("../img/苹果.png") center/160% no-repeat';
         food.domContent.style.borderRadius='50%';
         document.querySelector('.container').append(food.domContent);
     }
